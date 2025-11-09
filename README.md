@@ -23,7 +23,7 @@ We then build a **linear regression model** that predicts GPA based on SAT score
 | File Name | Description |
 |------------|-------------|
 | `Simple_Linear_Regression_Using OLS.ipynb` | The main Jupyter Notebook with all the code, explanations, and regression analysis. |
-| `data.csv` | Dataset containing SAT and GPA values. *(You can create this CSV file from the provided data table if not already included.)* |
+| `Data_GPA_SAT.csv` | Dataset containing SAT and GPA values. *(You can create this CSV file from the provided data table if not already included.)* |
 | `README.md` | Documentation file explaining the whole project. |
 
 ---
