@@ -72,81 +72,84 @@ You’ll need the following to run the notebooks:
 - Core Python libraries:
   ```bash
   pip install numpy pandas matplotlib seaborn scikit-learn statsmodels
+  ```
 
+---
 
-🚀 How to Use This Repository
+## 🚀 How to Use This Repository
 
-1. Clone the repository:
-git clone https://github.com/yourusername/Machine-Learning.git
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/Machine-Learning.git
+   ```
 
-2. Navigate into a specific project folder:
-cd "Machine Learning/Simple Linear Regression"
+2. **Navigate into a specific project folder:**
+   ```bash
+   cd "Machine Learning/Simple Linear Regression"
+   ```
 
-3. Open the Jupyter Notebook:
-jupyter notebook "Simple LR Practice.ipynb"
+3. **Open the Jupyter Notebook:**
+   ```bash
+   jupyter notebook "Simple LR Practice.ipynb"
+   ```
 
-4. Run all cells step-by-step and observe how the data is processed, modeled, and visualized.
+4. **Run all cells step-by-step** and observe how the data is processed, modeled, and visualized.
 
-📈 Example Project: Simple Linear Regression
+---
 
-Goal:
+## 📈 Example Project: Simple Linear Regression
+
+**Goal:**  
 Predict GPA based on SAT scores using a linear regression model.
 
-Concepts Covered:
+**Concepts Covered:**
+- Understanding the relationship between two continuous variables  
+- Using `statsmodels` to perform OLS regression  
+- Interpreting model coefficients, p-values, and R² score  
+- Plotting the regression line and data distribution  
 
-Understanding the relationship between two continuous variables
+---
 
-Using statsmodels to perform OLS regression
-
-Interpreting model coefficients, p-values, and R² score
-
-Plotting the regression line and data distribution
-
-🎓 Learning Focus
+## 🎓 Learning Focus
 
 Each project focuses on:
+- **Concept Explanation:** What the algorithm is and how it works  
+- **Implementation:** Step-by-step code walkthrough  
+- **Visualization:** Graphical interpretation of model outputs  
+- **Interpretation:** Understanding what results mean and how to improve them  
 
-Concept Explanation: What the algorithm is and how it works
+---
 
-Implementation: Step-by-step code walkthrough
-
-Visualization: Graphical interpretation of model outputs
-
-Interpretation: Understanding what results mean and how to improve them
-
-🔧 Future Plans
+## 🔧 Future Plans
 
 Upcoming additions may include:
-
-Logistic Regression (Binary Classification)
-
-Decision Trees and Random Forests
-
-Support Vector Machines (SVM)
-
-K-Means Clustering
-
-Neural Networks (with TensorFlow/PyTorch)
-
-Time Series Forecasting
+- Logistic Regression (Binary Classification)
+- Decision Trees and Random Forests
+- Support Vector Machines (SVM)
+- K-Means Clustering
+- Neural Networks (with TensorFlow/PyTorch)
+- Time Series Forecasting
 
 Stay tuned as this repository evolves with new learning milestones 🚀
 
-👨‍💻 Author
+---
 
-M. Israr Ali
-📍 Data Science & AI/ML Enthusiast
-💬 Focus: Regression, Clustering, Data Analysis, and Model Building
-📧 Open for feedback, collaboration, or internship opportunities
+## 👨‍💻 Author
 
-🌟 Support & Contribution
+**M. Israr Ali**  
+📍 Data Science & AI/ML Enthusiast  
+💬 Focus: Regression, Clustering, Data Analysis, and Model Building  
+📧 Open for feedback, collaboration, or internship opportunities  
+
+---
+
+## 🌟 Support & Contribution
 
 If you find these projects helpful:
-
-⭐ Star this repository to show support
-
-🪄 Fork it to explore and modify your own versions
-
-📝 Open an issue for suggestions or improvements
+- ⭐ **Star** this repository to show support  
+- 🪄 **Fork** it to explore and modify your own versions  
+- 📝 **Open an issue** for suggestions or improvements  
 
 Let’s keep learning and building together! 💪
+
+---
