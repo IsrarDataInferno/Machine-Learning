@@ -37,6 +37,7 @@ This repository will gradually include projects on:
 ## 📂 Repository Structure
 
 Machine Learning/
+
 │
 ├── Simple Linear Regression/
 │ ├── Simple LR Practice.ipynb
