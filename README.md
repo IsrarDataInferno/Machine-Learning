@@ -36,25 +36,25 @@ This repository will gradually include projects on:
 
 ## 📂 Repository Structure
 
+```
 Machine Learning/
-
 │
 ├── Simple Linear Regression/
-│ ├── Simple LR Practice.ipynb
-│ ├── data.csv
-│ └── README.md
+│   ├── Simple LR Practice.ipynb
+│   ├── data.csv
+│   └── README.md
 │
 ├── Multiple Linear Regression/
-│ ├── Multiple LR.ipynb
-│ ├── data.csv
-│ └── README.md
+│   ├── Multiple LR.ipynb
+│   ├── data.csv
+│   └── README.md
 │
 ├── K-Means Clustering/
-│ ├── KMeans.ipynb
-│ └── dataset.csv
+│   ├── KMeans.ipynb
+│   └── dataset.csv
 │
-└── README.md ← (You are here)
-
+└── README.md   ← (You are here)
+```
 
 Each folder contains:
 - Jupyter Notebook (`.ipynb`) with detailed code and explanations  
@@ -76,16 +76,16 @@ You’ll need the following to run the notebooks:
 
 🚀 How to Use This Repository
 
-Clone the repository:
+1. Clone the repository:
 git clone https://github.com/yourusername/Machine-Learning.git
 
-Navigate into a specific project folder:
+2. Navigate into a specific project folder:
 cd "Machine Learning/Simple Linear Regression"
 
-Open the Jupyter Notebook:
+3. Open the Jupyter Notebook:
 jupyter notebook "Simple LR Practice.ipynb"
 
-Run all cells step-by-step and observe how the data is processed, modeled, and visualized.
+4. Run all cells step-by-step and observe how the data is processed, modeled, and visualized.
 
 📈 Example Project: Simple Linear Regression
 
