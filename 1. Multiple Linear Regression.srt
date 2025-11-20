@@ -1,0 +1,135 @@
+1
+00:00:00,990 --> 00:00:01,940
+OK.
+
+2
+00:00:02,130 --> 00:00:09,960
+Excellent so far we learned about the simple linear regression we predicted the dependent variable y
+
+3
+00:00:10,050 --> 00:00:13,080
+with a single regress or x.
+
+4
+00:00:13,080 --> 00:00:21,170
+It is time to level up now now we said that in real life a person's income does not depend solely on
+
+5
+00:00:21,170 --> 00:00:27,890
+education but also on their experience the time they spend with their current employer and so on.
+
+6
+00:00:28,130 --> 00:00:35,660
+House prices do not depend solely on their size but also on location and year of construction college
+
+7
+00:00:35,660 --> 00:00:44,270
+GPA cannot be predicted solely by students as a score but also by their high school GPA income gender
+
+8
+00:00:44,330 --> 00:00:45,480
+and so on.
+
+9
+00:00:46,270 --> 00:00:53,020
+If we want to make good models we need multiple regressions multiple regressions address the higher
+
+10
+00:00:53,020 --> 00:00:59,260
+complexity of problems the more variables you have the more factors you are considering.
+
+11
+00:00:59,260 --> 00:01:07,370
+In a model in the real world things depend on two three or even 10 or 20 factors.
+
+12
+00:01:07,370 --> 00:01:14,070
+All right so this is a population multiple regression model.
+
+13
+00:01:14,130 --> 00:01:16,350
+It is similar to a simple regression.
+
+14
+00:01:16,560 --> 00:01:23,070
+The main difference is there are a bunch of independent variables not just one what we are interested
+
+15
+00:01:23,070 --> 00:01:26,160
+in is the multiple regression equation.
+
+16
+00:01:26,160 --> 00:01:30,200
+We want to plug in numbers and predict outcomes right.
+
+17
+00:01:30,300 --> 00:01:36,260
+Once again why that is the inferred value and B zero is the int..
+
+18
+00:01:36,360 --> 00:01:42,720
+The independent variables range from X1 to x K B one to B.
+
+19
+00:01:42,720 --> 00:01:46,050
+K are there corresponding coefficients.
+
+20
+00:01:46,060 --> 00:01:52,640
+The last thing to say about multiple regressions is that it's not about the best fitting line any more.
+
+21
+00:01:52,640 --> 00:01:59,410
+Actually it stops being two dimensional and when we have over three dimensions there is no visual way
+
+22
+00:01:59,410 --> 00:02:01,610
+to represent the data.
+
+23
+00:02:01,840 --> 00:02:06,640
+So if it is not about the line what is it about.
+
+24
+00:02:06,640 --> 00:02:09,220
+It's about the best fitting model.
+
+25
+00:02:09,850 --> 00:02:17,850
+As we saw from the O LS What we really want is the least sum of squared errors All right so how do we
+
+26
+00:02:17,850 --> 00:02:20,260
+decrease the models error.
+
+27
+00:02:20,550 --> 00:02:29,510
+Well by increasing the explanatory power of the model SSD and SSI are like communicating vessels remember
+
+28
+00:02:30,170 --> 00:02:31,670
+each time we lower one.
+
+29
+00:02:31,670 --> 00:02:35,590
+The other goes higher with each additional variable.
+
+30
+00:02:35,720 --> 00:02:40,270
+We increase the explanatory power by zero or more than zero.
+
+31
+00:02:40,550 --> 00:02:42,110
+We can not lower it.
+
+32
+00:02:42,410 --> 00:02:50,470
+More variables usually equal a better fitting model in the next lesson we will see how to determine
+
+33
+00:02:50,470 --> 00:02:54,280
+the optimal number of variables to use.
+
+34
+00:02:54,280 --> 00:02:55,150
+Thanks for watching.
