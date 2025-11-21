@@ -1,0 +1,307 @@
+1
+00:00:00,730 --> 00:00:06,280
+Remember when we talked about R-squared and I told you it was a very widely used measure of explanatory
+
+2
+00:00:06,280 --> 00:00:07,040
+power.
+
+3
+00:00:07,510 --> 00:00:10,190
+Well that was almost true.
+
+4
+00:00:10,270 --> 00:00:16,600
+We'll have to refine this measure its new version will be called the adjusted R-squared.
+
+5
+00:00:16,600 --> 00:00:21,680
+A statistician would always take a look at it when performing regression analysis.
+
+6
+00:00:21,700 --> 00:00:23,990
+So what does it adjust for.
+
+7
+00:00:24,400 --> 00:00:28,520
+Let's consider two statements we saw in the previous lessons.
+
+8
+00:00:28,570 --> 00:00:36,980
+One the R squared measures how much of the total variability is explained by our model and to multiple
+
+9
+00:00:36,980 --> 00:00:43,250
+regressions are always better than simple ones as with each additional variable that you add the explanatory
+
+10
+00:00:43,250 --> 00:00:46,220
+power may only increase or stay the same.
+
+11
+00:00:46,340 --> 00:00:53,180
+Considering the number of variables the adjusted R-squared is always smaller than the R-squared as it
+
+12
+00:00:53,180 --> 00:00:56,010
+penalizes excessive use of variables.
+
+13
+00:00:56,660 --> 00:01:00,600
+Let's create our first multiple regression to explain this point.
+
+14
+00:01:01,420 --> 00:01:05,790
+I'll import all the relevant libraries once again this time though.
+
+15
+00:01:05,900 --> 00:01:13,270
+I'll load the data from the file 1.0 to multiple linear regression dot CSP.
+
+16
+00:01:13,570 --> 00:01:20,070
+That's the file relevant for this lecture and you can download it from the Course resources as you can
+
+17
+00:01:20,070 --> 00:01:20,680
+see.
+
+18
+00:01:20,760 --> 00:01:26,700
+We have the same data with one additional variable called random 1 2 3.
+
+19
+00:01:26,730 --> 00:01:33,060
+I've generated a variable that assigns 1 2 or 3 randomly to each student.
+
+20
+00:01:33,060 --> 00:01:38,070
+We are 100 percent sure that this variable cannot predict college GPA.
+
+21
+00:01:38,550 --> 00:01:49,680
+So this is our new model college GPA is equal to be zero plus be 1 times S.A.T. score plus b 2 times
+
+22
+00:01:49,680 --> 00:01:51,990
+the random variable.
+
+23
+00:01:52,000 --> 00:01:54,810
+Here are the descriptive statistics.
+
+24
+00:01:54,950 --> 00:01:56,500
+What about the regression.
+
+25
+00:01:56,910 --> 00:02:05,250
+Why is still G.P.A. this time though we have two explanatory variables S.A.T. and random one to three
+
+26
+00:02:06,240 --> 00:02:11,550
+what we can do is declare x 1 as a data frame containing both series.
+
+27
+00:02:11,730 --> 00:02:12,750
+Great.
+
+28
+00:02:12,810 --> 00:02:15,350
+The rest remains unchanged.
+
+29
+00:02:15,360 --> 00:02:19,680
+Let's run the code and check out the newly created regression tables.
+
+30
+00:02:19,680 --> 00:02:23,270
+You can see the old ones in the box on the right.
+
+31
+00:02:23,340 --> 00:02:30,450
+We notice that the new R-Squared is zero point for 0 7 so it seems as we have increased the explanatory
+
+32
+00:02:30,450 --> 00:02:38,700
+power of the model but that our enthusiasm is dampened by the adjusted R-squared of 0.3 9:2 we were
+
+33
+00:02:38,700 --> 00:02:44,530
+penalized for adding an additional variable that had no strong explanatory power.
+
+34
+00:02:44,580 --> 00:02:48,210
+We have added information but have lost value.
+
+35
+00:02:48,210 --> 00:02:55,320
+Point is you should cherry pick your data as to exclude useless information however one would assume
+
+36
+00:02:55,320 --> 00:02:57,520
+regression analysis is smarter than that.
+
+37
+00:02:57,540 --> 00:02:58,560
+Right.
+
+38
+00:02:58,620 --> 00:03:02,990
+Adding an impractical variable should be pointed out by the model in some way.
+
+39
+00:03:03,900 --> 00:03:05,900
+Well that's true.
+
+40
+00:03:05,940 --> 00:03:12,990
+Look at the coefficient table we have determined the coefficient for the random 1 to 3 variable but
+
+41
+00:03:12,990 --> 00:03:19,490
+its p value is 0.7 6 to remember the null hypothesis of the test.
+
+42
+00:03:19,740 --> 00:03:21,810
+Beta 2 equals zero.
+
+43
+00:03:22,140 --> 00:03:27,480
+We cannot reject the null hypothesis that the 76 percent significance level.
+
+44
+00:03:27,480 --> 00:03:30,480
+This is an incredibly high p value.
+
+45
+00:03:30,510 --> 00:03:36,780
+Let me remind you that for a coefficient to be statistically significant We want a p value of less than
+
+46
+00:03:36,780 --> 00:03:38,660
+zero point zero five.
+
+47
+00:03:39,150 --> 00:03:45,240
+Our conclusion is that the variable random one to three not only worsens the explanatory power of the
+
+48
+00:03:45,240 --> 00:03:51,070
+model reflected by a lower adjusted r squared but is also insignificant.
+
+49
+00:03:51,150 --> 00:03:57,440
+Therefore it should be dropped altogether dropping useless variables is important.
+
+50
+00:03:57,790 --> 00:04:01,680
+You can see the original model changed from y hat.
+
+51
+00:04:01,690 --> 00:04:15,400
+Equals zero point 2 7 5 plus zero point zero zero 1 7 times x 1 2 y hat equals zero point 2 9 6 plus
+
+52
+00:04:15,400 --> 00:04:19,300
+zero point zero zero 1 7 times x 1.
+
+53
+00:04:19,390 --> 00:04:23,890
+Minus 0.00 a three times x 2.
+
+54
+00:04:24,930 --> 00:04:28,280
+The choice of third variable affected the intercept.
+
+55
+00:04:28,620 --> 00:04:31,870
+Whenever you have one variable that is ruining the model.
+
+56
+00:04:31,890 --> 00:04:38,280
+You should not use this model altogether because the bias of this variable is reflected into the coefficients
+
+57
+00:04:38,280 --> 00:04:40,320
+of the other variables.
+
+58
+00:04:40,320 --> 00:04:44,490
+The correct approach is to remove it from the aggression and run a new one.
+
+59
+00:04:44,490 --> 00:04:50,910
+Omitting the problematic predicter there is one more consideration concerning the removal of variables
+
+60
+00:04:50,910 --> 00:04:52,290
+from a model.
+
+61
+00:04:52,290 --> 00:04:57,660
+We can add 100 different variables to a model and probably the predictive power of the model will be
+
+62
+00:04:57,660 --> 00:04:58,910
+outstanding.
+
+63
+00:04:58,920 --> 00:05:03,330
+However this strategy makes regression analysis futile.
+
+64
+00:05:03,330 --> 00:05:08,700
+You are trying to use a few of independent variables that approximately predict the results.
+
+65
+00:05:08,700 --> 00:05:15,590
+The tradeoff is complex but simplicity is better rewarded than higher explanatory power.
+
+66
+00:05:15,600 --> 00:05:20,760
+Finally the adjusted R-squared is the basis for comparing regression models.
+
+67
+00:05:20,760 --> 00:05:26,310
+Once again it only makes sense to compare two models considering the same dependent variable and using
+
+68
+00:05:26,310 --> 00:05:27,970
+the same data set.
+
+69
+00:05:28,020 --> 00:05:33,300
+If we compare two models that are about two different dependent variables we will be making an apples
+
+70
+00:05:33,300 --> 00:05:35,130
+to oranges comparison.
+
+71
+00:05:35,280 --> 00:05:39,830
+If we use different data sets it is an apples to dinosaur's problem.
+
+72
+00:05:40,600 --> 00:05:46,140
+As you can see adjusted R-squared is a step in the right direction but should not be the only measure
+
+73
+00:05:46,180 --> 00:05:47,400
+trusted.
+
+74
+00:05:47,440 --> 00:05:48,940
+Caution is advised.
+
+75
+00:05:48,940 --> 00:05:54,530
+Whereas thorough logic and diligence are mandatory in our next lesson.
+
+76
+00:05:54,600 --> 00:05:58,890
+We will learn how to assess the overall significance of a model.
+
+77
+00:05:58,890 --> 00:05:59,700
+Thanks for watching.
